@@ -1,4 +1,4 @@
-package com.gosnin.autoclick.thread;
+package com.wenh.autoclick.thread;
 
 
 import androidx.lifecycle.LifecycleObserver;

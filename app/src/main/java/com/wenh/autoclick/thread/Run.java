@@ -1,4 +1,4 @@
-package com.gosnin.autoclick.thread;
+package com.wenh.autoclick.thread;
 
 public abstract class Run implements Runnable {
     private Thread mThread;

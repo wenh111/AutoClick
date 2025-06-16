@@ -1,4 +1,4 @@
-package com.gosnin.autoclick.thread;
+package com.wenh.autoclick.thread;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;

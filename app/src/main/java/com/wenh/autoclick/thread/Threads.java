@@ -1,4 +1,4 @@
-package com.gosnin.autoclick.thread;
+package com.wenh.autoclick.thread;
 
 import android.os.Handler;
 import android.os.HandlerThread;

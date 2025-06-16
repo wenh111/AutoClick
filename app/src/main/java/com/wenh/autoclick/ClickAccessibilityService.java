@@ -1,4 +1,4 @@
-package com.gosnin.autoclick;
+package com.wenh.autoclick;
 
 import android.accessibilityservice.AccessibilityService;
 import android.accessibilityservice.GestureDescription;
@@ -20,7 +20,7 @@ import android.widget.EditText;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 
-import com.gosnin.autoclick.thread.Threads;
+import com.wenh.autoclick.thread.Threads;
 
 import java.io.DataOutputStream;
 import java.util.Calendar;

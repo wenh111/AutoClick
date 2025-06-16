@@ -4,11 +4,11 @@ plugins {
 
 
 android {
-    namespace 'com.gosnin.autoclick'
+    namespace 'com.wenh.autoclick'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.gosnin.autoclick"
+        applicationId "com.wenh.autoclick"
         minSdk 24
         targetSdk 34
         versionCode 1

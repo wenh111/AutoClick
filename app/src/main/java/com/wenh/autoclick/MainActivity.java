@@ -1,4 +1,4 @@
-package com.gosnin.autoclick;
+package com.wenh.autoclick;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
