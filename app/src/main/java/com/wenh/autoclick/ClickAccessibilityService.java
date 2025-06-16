@@ -257,7 +257,7 @@ public class ClickAccessibilityService extends AccessibilityService {
             params.width = WindowManager.LayoutParams.WRAP_CONTENT;
             windowManager.updateViewLayout(floatingView, params);
             isStart = true;
-            Threads.back(new Runnable() {
+            /*Threads.back(new Runnable() {
                 private boolean startClick;
                 private long timeInMillis = System.currentTimeMillis();
 
@@ -268,7 +268,7 @@ public class ClickAccessibilityService extends AccessibilityService {
                             isStart = false;
                         }
                         if (startClick) {
-                            execTap(clickX, clickY); // 点击屏幕坐标
+                            clickAt(clickX, clickY); // 点击屏幕坐标
                             continue;
                         }
                         String nowFormat = TimeUtil.format(System.currentTimeMillis(), TimeUtil.YYYY_MM_DD_HH_MM_EN);
@@ -295,7 +295,7 @@ public class ClickAccessibilityService extends AccessibilityService {
                         startClick = true;
                     }
                 }
-            });
+            });*/
             if (timer != null) {
                 timer.cancel();
                 timer = null;
@@ -330,6 +330,8 @@ public class ClickAccessibilityService extends AccessibilityService {
 //                        startClick = false;
 
                     clickAt(clickX, clickY); // 点击屏幕坐标 (800, 600)
+//                    Threads.sleep(1000); // 确保点击间隔
+
                     System.out.println("开始时间:" + TimeUtil.format(System.currentTimeMillis(), "yyyy年MM月dd日 HH:mm:ss:SSS"));
                     startClick = true;
                 }
@@ -356,7 +358,6 @@ public class ClickAccessibilityService extends AccessibilityService {
     private int chooseSpeed = 100;
     private GestureDescription gesture;
 
-    @SuppressLint("NewApi")
     public void clickAt(final int x, final int y) {
         if (x != chooseX || y != chooseY || chooseSpeed != clickSpeed) {
             Path path = new Path();
@@ -371,7 +372,6 @@ public class ClickAccessibilityService extends AccessibilityService {
         if (gesture != null) {
             dispatchGesture(gesture, null, null);
         }
-//        Threads.sleep(clickSpeed); // 确保点击间隔
 
     }
 
